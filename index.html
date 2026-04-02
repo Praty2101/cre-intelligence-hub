@@ -291,39 +291,7 @@
             <div class="explorer-pagination" id="explorer-pagination"></div>
         </section>
 
-        <!-- Approach & Trade-offs -->
-        <section class="approach-section glass" id="approach">
-            <div class="section-hdr">
-                <h2>⚙️ Pipeline Architecture & Trade-offs</h2>
-                <p>How the system works and design decisions made</p>
-            </div>
-            <div class="approach-grid">
-                <div class="approach-card">
-                    <h4>🔧 Pipeline Design</h4>
-                    <ul>
-                        <li><strong>Python-based ETL</strong> — single-file pipeline (<code>run_pipeline.py</code>) orchestrating ingestion, normalisation, classification, linking, and insight generation</li>
-                        <li><strong>5 ingestion mediums</strong>: Excel (<code>openpyxl</code>), CSV (<code>pandas</code>), RSS (<code>feedparser</code>), Web scraping (<code>BeautifulSoup</code>), REST API (<code>requests</code>)</li>
-                        <li><strong>Unified JSON schema</strong> — every record normalised to: id, source, source_type, category, title, summary, content, entities, metadata, sectors, timestamp, tags, cross_links</li>
-                    </ul>
-                </div>
-                <div class="approach-card">
-                    <h4>🧠 NLP Strategy</h4>
-                    <ul>
-                        <li><strong>No LLM / no brute-force AI</strong> — keyword-based classification with curated dictionaries for sectors, property types, and locations</li>
-                        <li><strong>Regex-based entity extraction</strong> — financial values (£/€/$), organisations (capitalisation heuristics), locations (EU city dictionary + CSV enrichment)</li>
-                        <li><strong>Cross-source linking</strong> — records linked by shared entities (location + org + sector overlap scoring)</li>
-                    </ul>
-                </div>
-                <div class="approach-card">
-                    <h4>⚖️ Trade-offs</h4>
-                    <ul>
-                        <li><strong>Fallback data</strong> — when external sources (RSS, scraping) fail, representative fallback data ensures the pipeline always produces a complete dataset</li>
-                        <li><strong>Shallow NLP vs deep ML</strong> — keyword matching trades recall for simplicity and speed; a production system would use NER models</li>
-                        <li><strong>Static dashboard</strong> — pure HTML/CSS/JS with JSON data; no backend server needed for deployment, enabling instant Vercel/Netlify hosting</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+
     </main>
 
     <!-- Footer -->
