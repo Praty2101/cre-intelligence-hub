@@ -1,22 +1,22 @@
 {
   "pipeline_metadata": {
-    "generated_at": "2026-04-02T08:52:39.001448",
+    "generated_at": "2026-04-02T09:19:02.456712",
     "total_records": 307,
     "sources": [
-      "cities_csv",
-      "cre_lending",
-      "jll_scrape",
       "propertyweek_rss",
-      "altus_scrape",
       "fmp_api",
-      "zillow_csv",
-      "homes_csv"
+      "jll_scrape",
+      "cities_csv",
+      "homes_csv",
+      "cre_lending",
+      "altus_scrape",
+      "zillow_csv"
     ],
     "source_types": [
+      "scrape",
       "excel",
       "rss",
       "csv",
-      "scrape",
       "api"
     ]
   },
@@ -31,8 +31,8 @@
       "content": "Abu Dhabi Islamic Bank (ADIB) Private Saudi-based client The Hub in Bristol\u00a0 Loan to fund the regional UK office of global engineering firm Atkins, located at Aztec West Business Park in Bristol",
       "entities": {
         "locations": [
-          "Bristol",
-          "Uk"
+          "Uk",
+          "Bristol"
         ],
         "organizations": [
           "Abu Dhabi Islamic Bank (ADIB)",
@@ -58,14 +58,14 @@
         "notes": "Loan to fund the regional UK office of global engineering firm Atkins, located at Aztec West Business Park in Bristol"
       },
       "sectors": [
-        "Office",
         "Lending",
+        "Office",
         "Funds"
       ],
       "timestamp": "2018-03",
       "tags": [
-        "Office",
         "Lending",
+        "Office",
         "Funds"
       ],
       "cross_links": [
@@ -110,15 +110,15 @@
         "notes": "Loan to fund 1,000 new homes across the county"
       },
       "sectors": [
-        "Residential",
-        "Commercial",
-        "Lending"
+        "Lending",
+        "Funds",
+        "Commercial"
       ],
       "timestamp": "2018-03",
       "tags": [
-        "Residential",
-        "Commercial",
-        "Lending"
+        "Lending",
+        "Funds",
+        "Commercial"
       ],
       "cross_links": []
     },
@@ -159,13 +159,13 @@
         "notes": "Loan for the conversion of a row of townhouses into 12 ultra-luxury apartments "
       },
       "sectors": [
-        "Residential",
-        "Lending"
+        "Lending",
+        "Residential"
       ],
       "timestamp": "2018-03",
       "tags": [
-        "Residential",
-        "Lending"
+        "Lending",
+        "Residential"
       ],
       "cross_links": []
     },
@@ -205,14 +205,14 @@
         "notes": "5-year loan, priced at 4.5% plus Libor. The debt facility\u2019s LTV ratio is 65%"
       },
       "sectors": [
-        "Residential",
         "Lending",
+        "Residential",
         "Debt"
       ],
       "timestamp": "2018-03",
       "tags": [
-        "Residential",
         "Lending",
+        "Residential",
         "Debt"
       ],
       "cross_links": []
@@ -253,14 +253,14 @@
         "notes": "7-year, fixed-rate, first-mortgage loan is secured against the 159-room hotel. The loan, which represents a 47% LTV, will be used to refinance existing debt"
       },
       "sectors": [
-        "Hospitality",
         "Lending",
+        "Hospitality",
         "Debt"
       ],
       "timestamp": "2018-03",
       "tags": [
-        "Hospitality",
         "Lending",
+        "Hospitality",
         "Debt"
       ],
       "cross_links": []
@@ -339,15 +339,15 @@
         "notes": "Loan will fund the development of 50 residential units"
       },
       "sectors": [
+        "Lending",
         "Development",
-        "Residential",
-        "Lending"
+        "Residential"
       ],
       "timestamp": "2018-03",
       "tags": [
+        "Lending",
         "Development",
-        "Residential",
-        "Lending"
+        "Residential"
       ],
       "cross_links": []
     },
@@ -387,13 +387,13 @@
         "notes": "Loan will finance 24,000 sq ft of offices and 39 flats"
       },
       "sectors": [
-        "Office",
-        "Lending"
+        "Lending",
+        "Office"
       ],
       "timestamp": "2018-03",
       "tags": [
-        "Office",
-        "Lending"
+        "Lending",
+        "Office"
       ],
       "cross_links": []
     },
@@ -433,15 +433,15 @@
         "notes": "Debut Islamic UK RMBS in a non-Muslim country, providing a profit rate of three-month sterling Libor plus 0.80% for its only senior tranche"
       },
       "sectors": [
-        "Residential",
         "Capital Markets",
-        "Lending"
+        "Lending",
+        "Residential"
       ],
       "timestamp": "2018-03",
       "tags": [
-        "Residential",
         "Capital Markets",
-        "Lending"
+        "Lending",
+        "Residential"
       ],
       "cross_links": []
     },
@@ -479,14 +479,14 @@
         "notes": "First loan from the second Evergreen fund, an EU vehicle designed to support development projects in England\u2019s North-West"
       },
       "sectors": [
-        "Development",
         "Lending",
+        "Development",
         "Funds"
       ],
       "timestamp": "2018-03",
       "tags": [
-        "Development",
         "Lending",
+        "Development",
         "Funds"
       ],
       "cross_links": []
@@ -527,15 +527,15 @@
         "notes": "5-year mezzanine facility to refinance a portfolio of 40 hotels managed by the Shearings Leisure Group"
       },
       "sectors": [
-        "Hospitality",
         "Investment",
-        "Lending"
+        "Lending",
+        "Hospitality"
       ],
       "timestamp": "2018-03",
       "tags": [
-        "Hospitality",
         "Investment",
-        "Lending"
+        "Lending",
+        "Hospitality"
       ],
       "cross_links": []
     },
@@ -576,15 +576,15 @@
         "notes": "Loan will be used to acquire a 5-storey office building just off Trafalgar Square to be converted into a hotel"
       },
       "sectors": [
+        "Lending",
         "Office",
-        "Hospitality",
-        "Lending"
+        "Hospitality"
       ],
       "timestamp": "2018-03",
       "tags": [
+        "Lending",
         "Office",
-        "Hospitality",
-        "Lending"
+        "Hospitality"
       ],
       "cross_links": []
     },
@@ -624,15 +624,15 @@
         "notes": "\u00a328.5m, 2-year, 60% LTV development loan provided by Titlestone and \u00a314m, 70% LTV loan from Shawbrook with same maturity"
       },
       "sectors": [
+        "Lending",
         "Development",
-        "Residential",
-        "Lending"
+        "Residential"
       ],
       "timestamp": "2018-03",
       "tags": [
+        "Lending",
         "Development",
-        "Residential",
-        "Lending"
+        "Residential"
       ],
       "cross_links": []
     },
@@ -676,14 +676,14 @@
       },
       "sectors": [
         "Office",
-        "Residential",
-        "Mixed-Use"
+        "Mixed-Use",
+        "M&A"
       ],
       "timestamp": "2018-03",
       "tags": [
         "Office",
-        "Residential",
-        "Mixed-Use"
+        "Mixed-Use",
+        "M&A"
       ],
       "cross_links": []
     },
@@ -723,13 +723,13 @@
         "notes": "Loan with a maturity of between 5 and 7 years. London & Regional submitted a planning application 2 years ago for an extensive refurbishment of the hotel, to include new luxury flats"
       },
       "sectors": [
-        "Hospitality",
-        "Lending"
+        "Lending",
+        "Hospitality"
       ],
       "timestamp": "2018-02",
       "tags": [
-        "Hospitality",
-        "Lending"
+        "Lending",
+        "Hospitality"
       ],
       "cross_links": []
     },
@@ -769,15 +769,15 @@
         "notes": "Loan to fund the acquistion of the 430,000 sq ft office building, which has been comprehensively refurbished and is fully let to a range of tenants"
       },
       "sectors": [
-        "Office",
         "Investment",
-        "Lending"
+        "Office",
+        "Funds"
       ],
       "timestamp": "2018-02",
       "tags": [
-        "Office",
         "Investment",
-        "Lending"
+        "Office",
+        "Funds"
       ],
       "cross_links": [
         {
@@ -868,15 +868,15 @@
         "notes": "Development loan to fund the construction of 13 flats with a targeted exit date of December 2019"
       },
       "sectors": [
-        "Development",
+        "Lending",
         "Mixed-Use",
-        "Lending"
+        "Development"
       ],
       "timestamp": "2018-02",
       "tags": [
-        "Development",
+        "Lending",
         "Mixed-Use",
-        "Lending"
+        "Development"
       ],
       "cross_links": []
     },
@@ -916,13 +916,13 @@
         "notes": "Renewed revolving development finance facility for a further 4.5 years "
       },
       "sectors": [
-        "Development",
-        "Healthcare"
+        "Healthcare",
+        "Development"
       ],
       "timestamp": "2018-02",
       "tags": [
-        "Development",
-        "Healthcare"
+        "Healthcare",
+        "Development"
       ],
       "cross_links": []
     },
@@ -963,14 +963,14 @@
         "notes": "The new development will occupy a 0.56 acre site at 211-227 Hackney Road, replacing a disused bingo hall with 83 apartments"
       },
       "sectors": [
-        "Development",
         "Mixed-Use",
+        "Development",
         "Residential"
       ],
       "timestamp": "2018-02",
       "tags": [
-        "Development",
         "Mixed-Use",
+        "Development",
         "Residential"
       ],
       "cross_links": []
@@ -1053,14 +1053,14 @@
         "notes": "The 40% LTV, 10-year fixed rate loan is secured against the recently completed 310,000 sq ft office building"
       },
       "sectors": [
-        "Office",
         "Investment",
+        "Office",
         "Lending"
       ],
       "timestamp": "2018-02",
       "tags": [
-        "Office",
         "Investment",
+        "Office",
         "Lending"
       ],
       "cross_links": [
@@ -1114,15 +1114,15 @@
         "notes": "Loan provided at a margin discount, in line with Lloyds\u2019 \u00a31 billion \u2018green\u2019 commercial property lending initiative. The portfolio comprises several office and retail assets in Hammersmith and Fulham town centres"
       },
       "sectors": [
-        "Office",
-        "Mixed-Use",
-        "Commercial"
+        "Lending",
+        "Commercial",
+        "Office"
       ],
       "timestamp": "2018-02",
       "tags": [
-        "Office",
-        "Mixed-Use",
-        "Commercial"
+        "Lending",
+        "Commercial",
+        "Office"
       ],
       "cross_links": []
     },
@@ -1163,14 +1163,14 @@
         "notes": "Development finance loan to fund the part-conversion and rebuild of the former Thomas Lipton Care Home, as well as the construction of new residential units"
       },
       "sectors": [
-        "Residential",
         "Healthcare",
+        "Lending",
         "Development"
       ],
       "timestamp": "2018-02",
       "tags": [
-        "Residential",
         "Healthcare",
+        "Lending",
         "Development"
       ],
       "cross_links": []
@@ -1251,15 +1251,15 @@
         "notes": "2-year loan with and a LTC ratio of 80%"
       },
       "sectors": [
+        "Lending",
         "Development",
-        "Residential",
-        "Lending"
+        "Residential"
       ],
       "timestamp": "2018-02",
       "tags": [
+        "Lending",
         "Development",
-        "Residential",
-        "Lending"
+        "Residential"
       ],
       "cross_links": []
     },
@@ -1299,15 +1299,15 @@
         "notes": "Loan to fund the development comprising 200,000 sq ft of retail and leisure accommodation in the centre of Rochdale"
       },
       "sectors": [
-        "Development",
         "Lending",
-        "Retail"
+        "Development",
+        "Funds"
       ],
       "timestamp": "2018-01",
       "tags": [
-        "Development",
         "Lending",
-        "Retail"
+        "Development",
+        "Funds"
       ],
       "cross_links": []
     },
@@ -1347,15 +1347,15 @@
         "notes": "2-year development loan for the first phase of the home regeneration scheme \u2018The Ropeworks\u2019"
       },
       "sectors": [
+        "Lending",
         "Development",
-        "Residential",
-        "Lending"
+        "Residential"
       ],
       "timestamp": "2018-01",
       "tags": [
+        "Lending",
         "Development",
-        "Residential",
-        "Lending"
+        "Residential"
       ],
       "cross_links": []
     },
@@ -1453,8 +1453,8 @@
       "content": "Aviva Investors Helical The Shepherds Building in London, The Loom in London and Churchgate and Lee House in Manchester The finance is due for repayment in December 2024 and carries an initial interest rate of 3.28%, with interest on \u00a331m varying with movements in 3-month Libor",
       "entities": {
         "locations": [
-          "Manchester",
-          "London"
+          "London",
+          "Manchester"
         ],
         "organizations": [
           "Aviva Investors",
@@ -1536,15 +1536,15 @@
         "notes": "Development debt facility with a LTV ratio of 44 percent. The build-to-rent project is scheduled for completion in Q1 2021"
       },
       "sectors": [
-        "Residential",
+        "Development",
         "Commercial",
-        "Development"
+        "Funds"
       ],
       "timestamp": "2018-01",
       "tags": [
-        "Residential",
+        "Development",
         "Commercial",
-        "Development"
+        "Funds"
       ],
       "cross_links": []
     },
@@ -1584,15 +1584,15 @@
         "notes": "3-year whole loan providing development finance for a office building at the Embassy Gardens regeneration project"
       },
       "sectors": [
+        "Lending",
         "Office",
-        "Development",
-        "Commercial"
+        "Development"
       ],
       "timestamp": "2018-01",
       "tags": [
+        "Lending",
         "Office",
-        "Development",
-        "Commercial"
+        "Development"
       ],
       "cross_links": []
     },
@@ -1630,15 +1630,15 @@
         "notes": "3-year funding package provided at a margin discount, in line with Lloyds\u2019 \u00a31 billion \u2018green\u2019 commercial property lending initiative"
       },
       "sectors": [
-        "Commercial",
         "Lending",
-        "Funds"
+        "Funds",
+        "Commercial"
       ],
       "timestamp": "2018-01",
       "tags": [
-        "Commercial",
         "Lending",
-        "Funds"
+        "Funds",
+        "Commercial"
       ],
       "cross_links": []
     },
@@ -1652,8 +1652,8 @@
       "content": "Aviva, Lloyds Bank Commercial Banking Primary Health Properties Acquisitions of healthcare assets in UK and Ireland Long-term \u00a375m loan from Aviva at a fixed interest rate of 3.1% per year; and 3-year \u00a330m revolving credit facility from Lloyds, at rates ranging from 155bps to 175bps over Libor",
       "entities": {
         "locations": [
-          "Ireland",
-          "Uk"
+          "Uk",
+          "Ireland"
         ],
         "organizations": [
           "Aviva, Lloyds Bank Commercial Banking",
@@ -1679,17 +1679,23 @@
         "notes": "Long-term \u00a375m loan from Aviva at a fixed interest rate of 3.1% per year; and 3-year \u00a330m revolving credit facility from Lloyds, at rates ranging from 155bps to 175bps over Libor"
       },
       "sectors": [
-        "M&A",
         "Healthcare",
+        "Lending",
         "Commercial"
       ],
       "timestamp": "2018-01",
       "tags": [
-        "M&A",
         "Healthcare",
+        "Lending",
         "Commercial"
       ],
-      "cross_links": []
+      "cross_links": [
+        {
+          "id": "c2197678fa9a",
+          "source": "jll_scrape",
+          "relevance": 2.0
+        }
+      ]
     },
     {
       "id": "68d55ea47b97",
@@ -1725,13 +1731,13 @@
         "notes": "30-year bond issued to complete transactions from 2018"
       },
       "sectors": [
-        "M&A",
-        "Capital Markets"
+        "Capital Markets",
+        "M&A"
       ],
       "timestamp": "2018-01",
       "tags": [
-        "M&A",
-        "Capital Markets"
+        "Capital Markets",
+        "M&A"
       ],
       "cross_links": []
     },
@@ -1769,13 +1775,13 @@
         "notes": "Revolving credit facility for the firm's Diversified Property Fund for Charities"
       },
       "sectors": [
-        "M&A",
-        "Funds"
+        "Funds",
+        "M&A"
       ],
       "timestamp": "2018-01",
       "tags": [
-        "M&A",
-        "Funds"
+        "Funds",
+        "M&A"
       ],
       "cross_links": []
     },
@@ -1815,15 +1821,15 @@
         "notes": "Notes carry a coupon of 1.5% with an average maturity of 5.3 years"
       },
       "sectors": [
+        "Capital Markets",
         "REITs",
-        "M&A",
-        "Capital Markets"
+        "M&A"
       ],
       "timestamp": "2018-03",
       "tags": [
+        "Capital Markets",
         "REITs",
-        "M&A",
-        "Capital Markets"
+        "M&A"
       ],
       "cross_links": []
     },
@@ -1864,13 +1870,13 @@
         "notes": "Facility for Berlin-focused REIT, which portfolio comprised 20,224 units by end of 2017, of which 19,053 are residential units"
       },
       "sectors": [
-        "Residential",
-        "REITs"
+        "REITs",
+        "Residential"
       ],
       "timestamp": "2018-03",
       "tags": [
-        "Residential",
-        "REITs"
+        "REITs",
+        "Residential"
       ],
       "cross_links": []
     },
@@ -1913,15 +1919,15 @@
         "notes": "Loan to fund a portfolio of prime office, retail and industrial properties in key locations of Paris"
       },
       "sectors": [
-        "Office",
+        "Lending",
         "Industrial",
-        "Lending"
+        "Office"
       ],
       "timestamp": "2018-03",
       "tags": [
-        "Office",
+        "Lending",
         "Industrial",
-        "Lending"
+        "Office"
       ],
       "cross_links": []
     },
@@ -2006,13 +2012,13 @@
         "notes": "Starwood provided a whole loan with capex facility. Duration of 5 years."
       },
       "sectors": [
-        "Hospitality",
-        "Lending"
+        "Lending",
+        "Hospitality"
       ],
       "timestamp": "2018-03",
       "tags": [
-        "Hospitality",
-        "Lending"
+        "Lending",
+        "Hospitality"
       ],
       "cross_links": []
     },
@@ -2026,8 +2032,8 @@
       "content": "pbb Deutsche Pfandbriefbank Korean investors Porr Tower office building in Vienna, Austria Investment facility provided to companies managed by JR AMC on behalf of a consortium of Korean investors. The tower comprises a floor space of more than 30,000 sq m",
       "entities": {
         "locations": [
-          "Vienna",
-          "Austria"
+          "Austria",
+          "Vienna"
         ],
         "organizations": [
           "pbb Deutsche Pfandbriefbank",
@@ -2053,13 +2059,13 @@
         "notes": "Investment facility provided to companies managed by JR AMC on behalf of a consortium of Korean investors. The tower comprises a floor space of more than 30,000 sq m"
       },
       "sectors": [
-        "Office",
-        "Investment"
+        "Investment",
+        "Office"
       ],
       "timestamp": "2018-03",
       "tags": [
-        "Office",
-        "Investment"
+        "Investment",
+        "Office"
       ],
       "cross_links": []
     },
@@ -2100,14 +2106,14 @@
         "notes": "Loan to fund the purchase of the Senie Avenue building, consisting of around 23,400 sq m office space"
       },
       "sectors": [
-        "Office",
         "Lending",
+        "Office",
         "Funds"
       ],
       "timestamp": "2018-03",
       "tags": [
-        "Office",
         "Lending",
+        "Office",
         "Funds"
       ],
       "cross_links": []
@@ -2149,15 +2155,15 @@
         "notes": "Loan to fund Deka's acquisition of the office building for \u20ac775m. The purchase price implies a LTV ratio of around 32%. HypoVereinsbank syndicated \u20ac100m to ING Bank"
       },
       "sectors": [
+        "Lending",
         "Office",
-        "M&A",
-        "Lending"
+        "Funds"
       ],
       "timestamp": "2018-03",
       "tags": [
+        "Lending",
         "Office",
-        "M&A",
-        "Lending"
+        "Funds"
       ],
       "cross_links": []
     },
@@ -2198,15 +2204,15 @@
         "notes": "5-year mezzanine loan to finance 5 assets covering 80,000 sq m in Munich, Hannover and Dusseldorf. Provided through LREDS III fund"
       },
       "sectors": [
-        "Office",
         "Investment",
-        "Lending"
+        "Office",
+        "Funds"
       ],
       "timestamp": "2018-03",
       "tags": [
-        "Office",
         "Investment",
-        "Lending"
+        "Office",
+        "Funds"
       ],
       "cross_links": []
     },
@@ -2249,15 +2255,15 @@
         "notes": "Starwood provided \u20ac60m of aquisition finance and an additional \u20ac9m loan to finance the conversion of 80 aparthotel units into 84 residential apartments at Westpark Apartments"
       },
       "sectors": [
+        "Lending",
         "Hospitality",
-        "Residential",
-        "Lending"
+        "Residential"
       ],
       "timestamp": "2018-02",
       "tags": [
+        "Lending",
         "Hospitality",
-        "Residential",
-        "Lending"
+        "Residential"
       ],
       "cross_links": []
     },
@@ -2340,15 +2346,15 @@
         "notes": "Development finance to fund 200 serviced apartments for senior citizens in Berlin. Completion is scheduled for the end of 2020"
       },
       "sectors": [
+        "Funds",
         "Development",
-        "Residential",
-        "Funds"
+        "Residential"
       ],
       "timestamp": "2018-02",
       "tags": [
+        "Funds",
         "Development",
-        "Residential",
-        "Funds"
+        "Residential"
       ],
       "cross_links": []
     },
@@ -2389,15 +2395,15 @@
         "notes": "Development loan to build the shopping centre. The debt facility also provides long-term financing once the building is completed"
       },
       "sectors": [
-        "Development",
         "Lending",
-        "Retail"
+        "Debt",
+        "Development"
       ],
       "timestamp": "2018-02",
       "tags": [
-        "Development",
         "Lending",
-        "Retail"
+        "Debt",
+        "Development"
       ],
       "cross_links": []
     },
@@ -2439,15 +2445,15 @@
         "notes": "Loan to finance a building with a total area of 26,500 sq m. Two-thirds will be used for hotel accommodation. The top 10 floors of the 32-storey building will be used as offices"
       },
       "sectors": [
+        "Lending",
         "Office",
-        "Hospitality",
-        "Lending"
+        "Hospitality"
       ],
       "timestamp": "2018-02",
       "tags": [
+        "Lending",
         "Office",
-        "Hospitality",
-        "Lending"
+        "Hospitality"
       ],
       "cross_links": []
     },
@@ -2461,8 +2467,8 @@
       "content": "ING Bank Marathon Asset Management 13 office assets located in Lisbon, Portugal Loan to fund a 30,323 sq m office portfolio, with a market value of \u20ac80m",
       "entities": {
         "locations": [
-          "Portugal",
-          "Lisbon"
+          "Lisbon",
+          "Portugal"
         ],
         "organizations": [
           "ING Bank",
@@ -2488,14 +2494,14 @@
         "notes": "Loan to fund a 30,323 sq m office portfolio, with a market value of \u20ac80m"
       },
       "sectors": [
-        "Office",
         "Lending",
+        "Office",
         "Funds"
       ],
       "timestamp": "2018-02",
       "tags": [
-        "Office",
         "Lending",
+        "Office",
         "Funds"
       ],
       "cross_links": []
@@ -2537,13 +2543,13 @@
         "notes": "10-year loan will refinance 270 properties which are almost fully leased"
       },
       "sectors": [
-        "Residential",
-        "Lending"
+        "Lending",
+        "Residential"
       ],
       "timestamp": "2018-02",
       "tags": [
-        "Residential",
-        "Lending"
+        "Lending",
+        "Residential"
       ],
       "cross_links": []
     },
@@ -2676,13 +2682,13 @@
         "notes": "Long term loans with a maturity of 30 years. The transaction was divided in two parts: an acquisition facility of \u20ac80m provided at end of 2017 as well as a capex facility in the same amount signed in January 2018"
       },
       "sectors": [
-        "M&A",
-        "Lending"
+        "Lending",
+        "M&A"
       ],
       "timestamp": "2018-01",
       "tags": [
-        "M&A",
-        "Lending"
+        "Lending",
+        "M&A"
       ],
       "cross_links": []
     },
@@ -2722,13 +2728,13 @@
         "notes": "Senior loan of \u20ac105m provided by Natixis, in a pool with SCOR and Cr\u00e9dit Foncier de France. The junior facility totals \u20ac27m"
       },
       "sectors": [
-        "Residential",
-        "Lending"
+        "Lending",
+        "Residential"
       ],
       "timestamp": "2018-01",
       "tags": [
-        "Residential",
-        "Lending"
+        "Lending",
+        "Residential"
       ],
       "cross_links": []
     },
@@ -2742,8 +2748,8 @@
       "content": "pbb Deutsche Pfandbriefbank CLS Holdings German office portfolio Portfolio consists of 12 office buildings mainly located in Hamburg, D\u00fcsseldorf, Munich, Wiesbaden and the Stuttgart region with an overall lettable space of around 89.500 sq m",
       "entities": {
         "locations": [
-          "Hamburg",
-          "Munich"
+          "Munich",
+          "Hamburg"
         ],
         "organizations": [
           "pbb Deutsche Pfandbriefbank",
@@ -2813,14 +2819,14 @@
         "notes": "Loan understood to have a LTV ratio of 65% and a term of 5 years"
       },
       "sectors": [
-        "Logistics",
         "Investment",
+        "Logistics",
         "Lending"
       ],
       "timestamp": "2018-01",
       "tags": [
-        "Logistics",
         "Investment",
+        "Logistics",
         "Lending"
       ],
       "cross_links": []
@@ -2861,13 +2867,13 @@
         "notes": "Each of the properties is rented to logistics operator Hermes Germany"
       },
       "sectors": [
-        "Logistics",
-        "Investment"
+        "Investment",
+        "Logistics"
       ],
       "timestamp": "2018-01",
       "tags": [
-        "Logistics",
-        "Investment"
+        "Investment",
+        "Logistics"
       ],
       "cross_links": []
     },
@@ -2907,14 +2913,14 @@
         "notes": "Loan backs the \u20ac1bn acquisition of the retail portfolio, which implies a 63% LTV ratio"
       },
       "sectors": [
-        "M&A",
         "Lending",
+        "M&A",
         "Retail"
       ],
       "timestamp": "2018-01",
       "tags": [
-        "M&A",
         "Lending",
+        "M&A",
         "Retail"
       ],
       "cross_links": []
@@ -2953,14 +2959,14 @@
         "notes": "5-year facility to refinance 12 hostels based in 8 countries across Europe. It also finances the remaining development works for the Madrid hostel due to open in 2018"
       },
       "sectors": [
-        "Development",
         "Investment",
+        "Development",
         "Lending"
       ],
       "timestamp": "2018-01",
       "tags": [
-        "Development",
         "Investment",
+        "Development",
         "Lending"
       ],
       "cross_links": []
@@ -3018,8 +3024,8 @@
       "content": "HSH Nordbank Aug Prien Immobilien, DC Developments Residential scheme in Hamburg, Germany Loan to fund the development of 4 residential buildings within the HafenCity regeneration scheme",
       "entities": {
         "locations": [
-          "Hamburg",
-          "Germany"
+          "Germany",
+          "Hamburg"
         ],
         "organizations": [
           "HSH Nordbank",
@@ -3045,15 +3051,15 @@
         "notes": "Loan to fund the development of 4 residential buildings within the HafenCity regeneration scheme"
       },
       "sectors": [
+        "Lending",
         "Development",
-        "Residential",
-        "Lending"
+        "Residential"
       ],
       "timestamp": "2018-01",
       "tags": [
+        "Lending",
         "Development",
-        "Residential",
-        "Lending"
+        "Residential"
       ],
       "cross_links": []
     },
@@ -10362,9 +10368,9 @@
       "url": "https://www.propertyweek.com",
       "entities": {
         "locations": [
-          "Manchester",
           "London",
-          "Uk"
+          "Uk",
+          "Manchester"
         ],
         "organizations": [
           "West End"
@@ -10386,15 +10392,15 @@
         ]
       },
       "sectors": [
-        "Office",
-        "Investment"
+        "Investment",
+        "Office"
       ],
       "timestamp": "2024-03",
       "tags": [
         "news",
         "uk-property",
-        "Office",
-        "Investment"
+        "Investment",
+        "Office"
       ],
       "cross_links": [
         {
@@ -10473,15 +10479,15 @@
         ]
       },
       "sectors": [
-        "Logistics",
-        "Industrial"
+        "Industrial",
+        "Logistics"
       ],
       "timestamp": "2024-03",
       "tags": [
         "news",
         "uk-property",
-        "Logistics",
-        "Industrial"
+        "Industrial",
+        "Logistics"
       ],
       "cross_links": []
     },
@@ -10503,15 +10509,15 @@
         "property_types": []
       },
       "sectors": [
-        "Commercial",
-        "Lending"
+        "Lending",
+        "Commercial"
       ],
       "timestamp": "2024-03",
       "tags": [
         "news",
         "uk-property",
-        "Commercial",
-        "Lending"
+        "Lending",
+        "Commercial"
       ],
       "cross_links": []
     },
@@ -10558,8 +10564,8 @@
       "url": "https://www.propertyweek.com",
       "entities": {
         "locations": [
-          "Manchester",
-          "Uk"
+          "Uk",
+          "Manchester"
         ],
         "organizations": [],
         "financial_values": [],
@@ -10622,15 +10628,15 @@
         ]
       },
       "sectors": [
-        "Hospitality",
-        "Investment"
+        "Investment",
+        "Hospitality"
       ],
       "timestamp": "2024-03",
       "tags": [
         "news",
         "uk-property",
-        "Hospitality",
-        "Investment"
+        "Investment",
+        "Hospitality"
       ],
       "cross_links": []
     },
@@ -10650,16 +10656,16 @@
         "property_types": []
       },
       "sectors": [
-        "Funds",
         "Lending",
+        "Funds",
         "Debt"
       ],
       "timestamp": "2024-03",
       "tags": [
         "news",
         "uk-property",
-        "Funds",
         "Lending",
+        "Funds",
         "Debt"
       ],
       "cross_links": []
@@ -10692,15 +10698,15 @@
         ]
       },
       "sectors": [
-        "Office",
-        "Healthcare"
+        "Healthcare",
+        "Office"
       ],
       "timestamp": "2024-03",
       "tags": [
         "news",
         "uk-property",
-        "Office",
-        "Healthcare"
+        "Healthcare",
+        "Office"
       ],
       "cross_links": []
     },
@@ -10741,10 +10747,10 @@
       "url": "https://www.propertyweek.com",
       "entities": {
         "locations": [
-          "Manchester",
-          "Birmingham",
           "Uk",
-          "Leeds"
+          "Manchester",
+          "Leeds",
+          "Birmingham"
         ],
         "organizations": [],
         "financial_values": [],
@@ -10753,15 +10759,15 @@
         ]
       },
       "sectors": [
-        "Residential",
-        "Investment"
+        "Investment",
+        "Residential"
       ],
       "timestamp": "2024-03",
       "tags": [
         "news",
         "uk-property",
-        "Residential",
-        "Investment"
+        "Investment",
+        "Residential"
       ],
       "cross_links": [
         {
@@ -10865,9 +10871,9 @@
       "url": "https://www.jll.co.uk/en/trends-and-insights",
       "entities": {
         "locations": [
-          "Netherlands",
           "Uk",
-          "Germany"
+          "Germany",
+          "Netherlands"
         ],
         "organizations": [
           "European Logistics",
@@ -10907,11 +10913,11 @@
       "url": "https://www.jll.co.uk/en/trends-and-insights",
       "entities": {
         "locations": [
-          "Birmingham",
+          "Uk",
+          "Manchester",
           "Leeds",
           "London",
-          "Uk",
-          "Manchester"
+          "Birmingham"
         ],
         "organizations": [
           "UK Market Deep Dive The",
@@ -11019,15 +11025,15 @@
         ]
       },
       "sectors": [
-        "Logistics",
-        "Investment"
+        "Investment",
+        "Logistics"
       ],
       "timestamp": "2024-03",
       "tags": [
         "insight",
         "jll",
-        "Logistics",
-        "Investment"
+        "Investment",
+        "Logistics"
       ],
       "cross_links": []
     },
@@ -11053,16 +11059,16 @@
         ]
       },
       "sectors": [
-        "Development",
         "Mixed-Use",
+        "Development",
         "Retail"
       ],
       "timestamp": "2024-03",
       "tags": [
         "insight",
         "jll",
-        "Development",
         "Mixed-Use",
+        "Development",
         "Retail"
       ],
       "cross_links": []
@@ -11079,8 +11085,8 @@
       "entities": {
         "locations": [],
         "organizations": [
-          "Healthcare Real Estate",
           "Growing Asset Class Healthcare",
+          "Healthcare Real Estate",
           "JLL"
         ],
         "financial_values": [
@@ -11170,15 +11176,15 @@
         ]
       },
       "sectors": [
-        "Hospitality",
-        "Investment"
+        "Investment",
+        "Hospitality"
       ],
       "timestamp": "2024-03",
       "tags": [
         "insight",
         "jll",
-        "Hospitality",
-        "Investment"
+        "Investment",
+        "Hospitality"
       ],
       "cross_links": []
     },
@@ -11204,21 +11210,26 @@
         "property_types": []
       },
       "sectors": [
+        "Lending",
         "Funds",
-        "Commercial",
-        "Lending"
+        "Commercial"
       ],
       "timestamp": "2024-03",
       "tags": [
         "insight",
         "jll",
+        "Lending",
         "Funds",
-        "Commercial",
-        "Lending"
+        "Commercial"
       ],
       "cross_links": [
         {
           "id": "f53fff86ad40",
+          "source": "cre_lending",
+          "relevance": 2.0
+        },
+        {
+          "id": "b8ee34b6d420",
           "source": "cre_lending",
           "relevance": 2.0
         }
@@ -11265,15 +11276,15 @@
       "url": "https://www.jll.co.uk/en/trends-and-insights",
       "entities": {
         "locations": [
-          "Birmingham",
           "Edinburgh",
-          "London",
           "Uk",
-          "Manchester"
+          "Manchester",
+          "London",
+          "Birmingham"
         ],
         "organizations": [
-          "Investment Hotspots Regional UK",
           "Regional UK Cities",
+          "Investment Hotspots Regional UK",
           "JLL"
         ],
         "financial_values": [],
@@ -11282,15 +11293,15 @@
         ]
       },
       "sectors": [
-        "Office",
-        "Investment"
+        "Investment",
+        "Office"
       ],
       "timestamp": "2024-03",
       "tags": [
         "insight",
         "jll",
-        "Office",
-        "Investment"
+        "Investment",
+        "Office"
       ],
       "cross_links": [
         {
@@ -11332,8 +11343,8 @@
       "entities": {
         "locations": [],
         "organizations": [
-          "CRE Valuation Trends",
           "Rising Rate Environment Commercial",
+          "CRE Valuation Trends",
           "Altus Group"
         ],
         "financial_values": [],
@@ -11399,8 +11410,8 @@
       "entities": {
         "locations": [],
         "organizations": [
-          "Construction Cost Index",
           "Update Construction",
+          "Construction Cost Index",
           "Altus Group"
         ],
         "financial_values": [],
@@ -11429,8 +11440,8 @@
       "entities": {
         "locations": [],
         "organizations": [
-          "Advancing CRE Analytics Advanced",
           "ARGUS Enterprise",
+          "Advancing CRE Analytics Advanced",
           "Altus Group"
         ],
         "financial_values": [],
@@ -11460,8 +11471,8 @@
         "locations": [],
         "organizations": [
           "North American",
-          "Global Capital Flows",
           "Commercial Real Estate Cross",
+          "Global Capital Flows",
           "Altus Group"
         ],
         "financial_values": [
@@ -11474,15 +11485,15 @@
         "property_types": []
       },
       "sectors": [
-        "Commercial",
-        "Investment"
+        "Investment",
+        "Commercial"
       ],
       "timestamp": "2024-03",
       "tags": [
         "insight",
         "altus",
-        "Commercial",
-        "Investment"
+        "Investment",
+        "Commercial"
       ],
       "cross_links": []
     },
@@ -11594,13 +11605,13 @@
       "url": "https://www.altusgroup.com/insights/",
       "entities": {
         "locations": [
-          "Netherlands",
           "Uk",
-          "Germany"
+          "Germany",
+          "Netherlands"
         ],
         "organizations": [
-          "European Market Overview Institutional",
           "Multifamily Housing",
+          "European Market Overview Institutional",
           "Altus Group"
         ],
         "financial_values": [
@@ -11613,15 +11624,15 @@
         "property_types": []
       },
       "sectors": [
-        "Residential",
-        "Investment"
+        "Investment",
+        "Residential"
       ],
       "timestamp": "2024-03",
       "tags": [
         "insight",
         "altus",
-        "Residential",
-        "Investment"
+        "Investment",
+        "Residential"
       ],
       "cross_links": [
         {
@@ -11657,16 +11668,16 @@
         "property_types": []
       },
       "sectors": [
-        "Funds",
         "Lending",
+        "Funds",
         "Debt"
       ],
       "timestamp": "2024-03",
       "tags": [
         "insight",
         "altus",
-        "Funds",
         "Lending",
+        "Funds",
         "Debt"
       ],
       "cross_links": []
@@ -11683,8 +11694,8 @@
       "entities": {
         "locations": [],
         "organizations": [
-          "Property Management Property",
           "Proptech Innovation",
+          "Property Management Property",
           "Altus Group"
         ],
         "financial_values": [],
@@ -11733,8 +11744,8 @@
         "price": 152
       },
       "sectors": [
-        "Mixed-Use",
-        "Investment"
+        "Investment",
+        "Mixed-Use"
       ],
       "timestamp": "2024-03",
       "tags": [
@@ -11897,8 +11908,8 @@
         "price": 58
       },
       "sectors": [
-        "Commercial",
-        "Investment"
+        "Investment",
+        "Commercial"
       ],
       "timestamp": "2024-03",
       "tags": [
@@ -11942,9 +11953,9 @@
         "price": 95
       },
       "sectors": [
-        "Residential",
         "Healthcare",
-        "REITs"
+        "REITs",
+        "Residential"
       ],
       "timestamp": "2024-03",
       "tags": [
@@ -12111,8 +12122,8 @@
       },
       "sectors": [
         "Development",
-        "Residential",
-        "M&A"
+        "M&A",
+        "Residential"
       ],
       "timestamp": "2024-03",
       "tags": [
@@ -12161,7 +12172,7 @@
     {
       "id": "insight_sector_mismatch",
       "title": "Media-Lending Sector Divergence",
-      "description": "Sectors trending in industry media (General, Investment, Commercial) are underrepresented in current lending activity. This suggests either emerging opportunity or media hype yet to translate into deal flow.",
+      "description": "Sectors trending in industry media (Investment, General, Commercial) are underrepresented in current lending activity. This suggests either emerging opportunity or media hype yet to translate into deal flow.",
       "type": "cross_source",
       "severity": "medium",
       "sources": [
@@ -12181,14 +12192,14 @@
           "Debt": 3
         },
         "hot_sectors_lending": {
-          "Lending": 40,
-          "Residential": 19,
+          "Lending": 42,
           "Development": 19,
           "Office": 18,
+          "Residential": 15,
+          "Funds": 13,
           "Hospitality": 8,
           "Investment": 8,
-          "Funds": 7,
-          "M&A": 7
+          "Capital Markets": 6
         }
       }
     },
@@ -12384,17 +12395,17 @@
     "avg_home_price_k": 231.2,
     "sector_distribution": {
       "Location": 128,
-      "Residential": 95,
-      "Lending": 45,
+      "Residential": 91,
+      "Lending": 47,
       "Office": 26,
       "Development": 22,
       "Investment": 21,
-      "Commercial": 13,
+      "Funds": 16,
+      "Commercial": 12,
       "Hospitality": 11,
-      "Funds": 10,
       "General": 10,
-      "M&A": 8,
-      "Debt": 7
+      "Debt": 8,
+      "M&A": 7
     },
     "top_organizations": [
       {
