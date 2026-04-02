@@ -1,0 +1,13 @@
+{
+  "name": "cre-intelligence-hub",
+  "version": "1.0.0",
+  "description": "CRE Intelligence Pipeline — Cross-Source Real Estate Analytics Dashboard",
+  "scripts": {
+    "pipeline": "python3 pipeline/run_pipeline.py",
+    "dev": "npx -y serve dashboard -l 3000",
+    "start": "npx -y serve dashboard -l 3000"
+  },
+  "keywords": ["cre", "real-estate", "analytics", "dashboard", "data-pipeline"],
+  "author": "Pratyay Ghosh",
+  "license": "MIT"
+}

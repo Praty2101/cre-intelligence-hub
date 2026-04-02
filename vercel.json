@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "name": "cre-intelligence-hub",
+  "builds": [
+    {
+      "src": "dashboard/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/dashboard/$1"
+    }
+  ]
+}
