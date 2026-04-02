@@ -645,6 +645,115 @@ def compute_statistics(all_records):
     stats["top_organizations"] = [{"name":n,"count":c} for n,c in org_counts.most_common(15)]
     return stats
 
+# ── Smart-Batched LLM Processing ──────────────────────────────────
+
+def batch_process_with_llm(records):
+    """
+    Smart-batched LLM processing (OpenAI or Gemini).
+    Filters out structured CSVs and only sends unstructured data to the LLM.
+    """
+    api_key = os.environ.get("GEMINI_API_KEY") or os.environ.get("OPENAI_API_KEY")
+    if not api_key:
+        print("  → ℹ No LLM API key detected. Skipping smart-batch LLM enrichment.")
+        print("      (Export GEMINI_API_KEY or OPENAI_API_KEY to enable true AI classification)")
+        return records
+
+    print("  → ✨ Smart-batching LLM processing for unstructured records...")
+    
+    # 1. Select only unstructured records
+    unstructured_sources = {"cre_lending", "propertyweek_rss", "jll_scrape", "altus_scrape"}
+    unstructured_records = [r for r in records if r["source"] in unstructured_sources and len(r.get("content", "")) > 30]
+    
+    if not unstructured_records:
+        return records
+
+    print(f"    ✓ Found {len(unstructured_records)} unstructured records to intelligently process via LLM.")
+
+    # 2. Batch definition
+    BATCH_SIZE = 15
+    import time
+    
+    is_gemini = bool(os.environ.get("GEMINI_API_KEY"))
+    active_key = os.environ.get("GEMINI_API_KEY") if is_gemini else os.environ.get("OPENAI_API_KEY")
+    
+    for i in range(0, len(unstructured_records), BATCH_SIZE):
+        batch = unstructured_records[i:i+BATCH_SIZE]
+        batch_payload = [{"id": r["id"], "text": r["content"][:1000]} for r in batch]
+        
+        system_prompt = """
+You are a highly capable Commercial Real Estate AI.
+Given a JSON array of records with `id` and `text`, return a JSON array containing the exact same IDs.
+For each record, add `summary` (clean 1-sentence summary avoiding fluff), `sectors` (a list of 1-3 sectors like Logistics, Office, Retail, Healthcare), and `entities` (a dictionary mapping `locations`, `organizations`, and `property_types` detected in the text to string arrays).
+Output MUST be raw valid JSON containing the array of objects. Do not use markdown wrappers.
+"""
+        
+        prompt_text = f"{system_prompt}\n\nInputs:\n{json.dumps(batch_payload)}"
+        
+        print(f"    → Processing batch {i//BATCH_SIZE + 1} of {(len(unstructured_records)-1)//BATCH_SIZE + 1}...")
+        
+        try:
+            parsed_results = []
+            if is_gemini:
+                url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={active_key}"
+                req_data = {
+                    "contents": [{"parts": [{"text": prompt_text}]}],
+                    "generationConfig": {"temperature": 0.1, "responseMimeType": "application/json"}
+                }
+                resp = requests.post(url, json=req_data, timeout=30)
+                if resp.status_code == 200:
+                    text_response = resp.json()["candidates"][0]["content"]["parts"][0]["text"]
+                    parsed_results = json.loads(text_response)
+                else:
+                    print(f"      ⚠ API Error: {resp.status_code} {resp.text[:100]}")
+            else:
+                url = "https://api.openai.com/v1/chat/completions"
+                headers = {"Authorization": f"Bearer {active_key}"}
+                req_data = {
+                    "model": "gpt-4o-mini",
+                    "temperature": 0.1,
+                    "response_format": {"type": "json_object"},
+                    "messages": [
+                        {"role": "system", "content": system_prompt + "\\nReturn output wrapped in a JSON object: {\"results\": [ ... ]}"},
+                        {"role": "user", "content": json.dumps(batch_payload)}
+                    ]
+                }
+                resp = requests.post(url, json=req_data, headers=headers, timeout=30)
+                if resp.status_code == 200:
+                    text_response = resp.json()["choices"][0]["message"]["content"]
+                    parsed = json.loads(text_response)
+                    parsed_results = parsed.get("results", parsed)
+                else:
+                    print(f"      ⚠ API Error: {resp.status_code} {resp.text[:100]}")
+            
+            # 3. Merge parsed results back into memory safely
+            result_map = {res["id"]: res for res in parsed_results if isinstance(res, dict) and "id" in res}
+            
+            for r in batch:
+                if r["id"] in result_map:
+                    llm_data = result_map[r["id"]]
+                    if "summary" in llm_data and llm_data["summary"]:
+                        r["summary"] = llm_data["summary"]
+                    if "sectors" in llm_data and isinstance(llm_data["sectors"], list):
+                        r["sectors"] = llm_data["sectors"]
+                        r["tags"] = list(set(r.get("tags", []) + r["sectors"]))
+                    if "entities" in llm_data and isinstance(llm_data["entities"], dict):
+                        cur_ents = r.get("entities", {})
+                        r["entities"] = {
+                            "locations": list(set(cur_ents.get("locations", []) + llm_data["entities"].get("locations", []))),
+                            "organizations": list(set(cur_ents.get("organizations", []) + llm_data["entities"].get("organizations", []))),
+                            "property_types": list(set(cur_ents.get("property_types", []) + llm_data["entities"].get("property_types", []))),
+                            "financial_values": cur_ents.get("financial_values", [])
+                        }
+            
+            time.sleep(1) # Simple rate limit padding
+            
+        except Exception as e:
+            print(f"      ⚠ LLM batch processing failed for this batch: {e}")
+            continue
+
+    print("    ✓ LLM smart-batch enrichment complete.")
+    return records
+
 # ── Main Pipeline ─────────────────────────────────────────────────
 
 def main():
@@ -664,6 +773,9 @@ def main():
     all_records.extend(ingest_fmp_api())
     
     print(f"\n📋 Total records ingested: {len(all_records)}")
+    
+    print("\n🧠 PHASE 1.5: Smart-Batched LLM Enrichment")
+    all_records = batch_process_with_llm(all_records)
     
     print("\n🔗 PHASE 2: Cross-Source Linking")
     # Link records by shared locations/organizations/sectors
