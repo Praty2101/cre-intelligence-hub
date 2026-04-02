@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(BASE_DIR, "data")
 RAW_DIR = os.path.join(DATA_DIR, "raw")
 PROC_DIR = os.path.join(DATA_DIR, "processed")
-DASH_DIR = os.path.join(BASE_DIR, "dashboard")
+DASH_DIR = BASE_DIR
 DATASET_DIR = "/Users/pratyayghosh/Downloads/Unstructured datasets"
 
 HEADERS = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"}
